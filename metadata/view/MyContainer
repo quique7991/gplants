@@ -1,0 +1,99 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "id": "home",
+        "designer|userClassName": "MyContainer",
+        "designer|userAlias": "mycontainer"
+    },
+    "designerId": "52acf5c6-bf36-40ab-b1ce-200e095613e5",
+    "cn": [
+        {
+            "type": "Ext.TitleBar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top",
+                "height": "10%",
+                "title": "GPlants"
+            },
+            "designerId": "54a39cf1-0c88-44af-a585-e40ce9c8eead"
+        },
+        {
+            "type": "Ext.Img",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": "35%",
+                "itemId": "myimg",
+                "top": "9%",
+                "width": "100%",
+                "src": "http://www.elandroidelibre.com/wp-content/uploads/2011/10/androidcamera.png"
+            },
+            "designerId": "260eae61-2a3b-477b-89fd-332a0420fcd3",
+            "cn": [
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onMyimgTap",
+                        "implHandler": [
+                            "Ext.getCmp('tabPanel').setActiveItem(Ext.getCmp('camera'));"
+                        ],
+                        "name": "tap"
+                    },
+                    "designerId": "6e7de31b-9c43-4675-9561-0e561d0e34c5"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Img",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": "35%",
+                "itemId": "myimg1",
+                "left": "",
+                "top": "50%",
+                "width": "100%",
+                "src": "http://tecmo.webfactional.com/gplants/dir.png"
+            },
+            "designerId": "bfdfe208-0d2a-4463-a7eb-281996aee6b6",
+            "cn": [
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onMyimg1Tap",
+                        "implHandler": [
+                            "Ext.getCmp('tabPanel').setActiveItem(Ext.getCmp('list'));"
+                        ],
+                        "name": "tap"
+                    },
+                    "designerId": "d99bfd8c-b29e-4e53-8bc3-5b2aa5f4070e"
+                }
+            ]
+        }
+    ]
+}

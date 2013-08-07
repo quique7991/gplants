@@ -1,0 +1,66 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "id": "camera",
+        "designer|userClassName": "MyContainer1",
+        "designer|userAlias": "mycontainer1"
+    },
+    "designerId": "7dd3e5da-76bb-487c-9736-723fe6e42396",
+    "cn": [
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "centered": false,
+                "docked": "bottom",
+                "itemId": "mybutton1",
+                "left": "40%",
+                "top": "88%",
+                "ui": "round",
+                "width": "20%",
+                "text": "[]"
+            },
+            "designerId": "d4de0904-790d-4e99-994e-8a962c2ec73a",
+            "cn": [
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onMybutton1Tap",
+                        "implHandler": [
+                            " try{",
+                            "        navigator.camera.getPicture(onSuccess, onFail, { quality: 50, destinationType: Camera.DestinationType.DATA_URL});",
+                            "        function \tonSuccess(imageData) {",
+                            "            var image = document.getElementById('myImage');",
+                            "            image.src = \"data:image/jpeg;base64,\" + imageData;",
+                            "            alert(\"Exitoo....\")",
+                            "        }",
+                            "        function onFail(message) {",
+                            "            alert('Failed because: ' + message);",
+                            "        }",
+                            "    }",
+                            "    catch(e){",
+                            "        alert('getting picture failed as well...');",
+                            "    }"
+                        ],
+                        "name": "tap"
+                    },
+                    "designerId": "a42e10de-fe94-426f-a909-38da602f9cee"
+                }
+            ]
+        }
+    ]
+}

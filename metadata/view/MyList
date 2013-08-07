@@ -1,0 +1,77 @@
+{
+    "type": "Ext.dataview.List",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "id": "list",
+        "designer|userClassName": "MyList",
+        "designer|userAlias": "mylist"
+    },
+    "designerId": "841e2d81-97ef-47b6-978a-c053e378ce77",
+    "cn": [
+        {
+            "type": "Ext.XTemplate",
+            "reference": {
+                "name": "itemTpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "implHandler": [
+                    "<div>List Item {string}</div>"
+                ],
+                "designer|displayName": "itemTpl"
+            },
+            "designerId": "e7b01747-2ede-4fc1-b2db-fc929874d53e"
+        },
+        {
+            "type": "Ext.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top",
+                "title": "Previous Photos"
+            },
+            "designerId": "5516fa8c-f9c7-4f28-81f0-8b5591913c73",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "mybutton",
+                        "text": "Back"
+                    },
+                    "designerId": "f2be7b46-5e96-4f23-aae6-68199ea1b28e",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onMybuttonTap",
+                                "implHandler": [
+                                    "Ext.getCmp('tabPanel').setActiveItem(Ext.getCmp('home'));"
+                                ],
+                                "name": "tap"
+                            },
+                            "designerId": "2d4620ef-3de1-479c-af94-859568d02560"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns    = "http://www.w3.org/ns/widgets"
+	xmlns:gap	= "http://phonegap.com/ns/1.0"
+	id		    = "com.barcode.app"
+	version 	= "1.0.0">
+
+	<name>BarcdAPP</name>
+
+	<description>
+        Scanner
+	</description>
+
+	<author href="http://www.didi.cr" email="info@didi.cr">
+            TECMO S.A.
+	</author>
+		
+
+        <feature name="http://api.phonegap.com/1.0/device" />
+        
+        <feature name="http://api.phonegap.com/1.0/battery"/>
+		<feature name="http://api.phonegap.com/1.0/camera"/>
+		<feature name="http://api.phonegap.com/1.0/contacts"/>
+		<feature name="http://api.phonegap.com/1.0/file"/>
+		<feature name="http://api.phonegap.com/1.0/geolocation"/>
+		<feature name="http://api.phonegap.com/1.0/media"/>
+		<feature name="http://api.phonegap.com/1.0/network"/>
+		<feature name="http://api.phonegap.com/1.0/notification"/>
+
+        <preference name="phonegap-version" value="2.9.0" />
+        <preference name="orientation" value="portrait" />
+        <preference name="webviewbounce" value="false" />
+        <preference name="stay-in-webview" value="true" />
+
+    	<icon src="./resources/scanner-barcode.png" width="36" height="36" />
+
+    	<access origin="*" />
+    	
+
+
+        <gap:plugin name="com.phonegap.plugins.barcodescanner" />
+
+</widget>

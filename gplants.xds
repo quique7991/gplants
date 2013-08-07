@@ -1,0 +1,66 @@
+{
+    "name": "gplants",
+    "settings": {},
+    "xdsVersion": "2.2.2",
+    "xdsBuild": 991,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000503,
+    "framework": "touch22",
+    "topInstanceFileMap": {
+        "52acf5c6-bf36-40ab-b1ce-200e095613e5": {
+            "paths": [
+                "metadata/view/MyContainer",
+                "app/view/override/MyContainer.js",
+                "app/view/MyContainer.js"
+            ],
+            "className": "MyContainer"
+        },
+        "7dd3e5da-76bb-487c-9736-723fe6e42396": {
+            "paths": [
+                "metadata/view/MyContainer1",
+                "app/view/override/MyContainer1.js",
+                "app/view/MyContainer1.js"
+            ],
+            "className": "MyContainer1"
+        },
+        "841e2d81-97ef-47b6-978a-c053e378ce77": {
+            "paths": [
+                "metadata/view/MyList",
+                "app/view/override/MyList.js",
+                "app/view/MyList.js"
+            ],
+            "className": "MyList"
+        },
+        "a4982c44-9deb-4c2a-9f18-bfc24c9d5450": {
+            "paths": [
+                "metadata/view/MyTabPanel",
+                "app/view/override/MyTabPanel.js",
+                "app/view/MyTabPanel.js"
+            ],
+            "className": "MyTabPanel"
+        },
+        "d74c2fde-ed66-438e-8c7f-8147e057169e": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "52acf5c6-bf36-40ab-b1ce-200e095613e5",
+            "7dd3e5da-76bb-487c-9736-723fe6e42396",
+            "841e2d81-97ef-47b6-978a-c053e378ce77",
+            "a4982c44-9deb-4c2a-9f18-bfc24c9d5450"
+        ],
+        "store": [],
+        "controller": [],
+        "model": [],
+        "resource": [
+            "d74c2fde-ed66-438e-8c7f-8147e057169e"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}
